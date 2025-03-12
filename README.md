@@ -2,7 +2,8 @@
 
 A simple web-app build using django-framework to predict house prices in certain ciities of india based on the traning dataset provided.
 This project is a tutorial for django framework and linear regressio model of machine learning.
-Technologies used are:
+
+\nTechnologies used are:
 
 * Python Django framework for web development
 * Linear Regression model of machine learning
