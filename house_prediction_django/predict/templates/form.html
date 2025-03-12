@@ -1,0 +1,23 @@
+{% comment %} <h1>this is sample django project </h1> {% endcomment %}
+{% load static %}
+<link rel="stylesheet" href="{% static "form.css" %}">
+<div class="box">
+<form method="post">
+    {% csrf_token %}
+    <div class="input"> Bedrooms: <input name="bedrooms" type="number" placeholder="number of bedrooms"></div> <br>
+    <div class="input"> Bathrooms: <input name="bathrooms" type="number" placeholder="number of bathrooms"></div> <br>
+    <div class="input"> Area: <input name="area" type="number" placeholder="area sqft."></div> <br>
+    <div class="input"> Location: <select name="location">
+        <option value="ahmedabad">Ahmedabad</option>
+        <option value="bangalore">Bangalore</option>
+        <option value="chennai">Chennai</option>
+        <option value="delhi">Delhi</option>
+        <option value="hyderabad">Hyderabad</option>
+        <option value="kolkata">Kolkata</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="pune">Pune</option>
+    </select> </div><br>
+    <input type="submit" class="submitbtn" value="Predict Price">
+</form> <br>
+<label class="price" for="price">Predicted price is: {{price}}</label>
+</div>
